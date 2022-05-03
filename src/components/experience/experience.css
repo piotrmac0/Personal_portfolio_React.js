@@ -1,0 +1,85 @@
+#experience {
+    margin-left:1vw;
+    
+}
+
+.experience__container {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+    justify-items:center;
+    overflow:hidden;
+    
+  
+}
+
+.experience__container > div {
+    width: 100%;
+    background: var(--color-bg-variant);
+    padding: 8% 10%;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    margin-bottom: 3vh;
+    
+}
+
+.experience__container > div:hover {
+    width: 100%;
+    background: transparent;
+    padding: 5% 10%;
+    border-color: var(--color-primary-variant);
+    cursor: default;
+}
+
+.experience__container > div h3 {
+    text-align:center;
+    margin-bottom:2rem;
+    color: var(--color-primary);
+}
+
+.experience__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap:30px;
+}
+
+
+.experience__details_icon {
+    margin-top: 6px;
+    color: var(--color-var-primary);
+}
+
+
+
+/* ======= MEDIA QUERIES (MEDIUM DEVICES) ======= */
+
+@media screen and (max-width: 1024px) {
+    #experience {
+        margin-left:5vw;
+        margin-right:5vw;
+    }
+}
+
+/* ======= MEDIA QUERIES (SMALL DEVICES) ======= */
+
+@media screen and (max-width: 768px) {
+
+#experience {
+    margin-left:5vw;
+    margin-right:5vw;
+}
+
+    .experience__container {
+        display:grid;
+        grid-template-columns: 1fr;
+}
+
+#experience h2{
+    margin-bottom: 8vh;
+}
+
+#experience h5{
+    margin-top: 25vh;
+}
+
+}

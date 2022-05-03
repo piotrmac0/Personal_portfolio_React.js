@@ -1,0 +1,168 @@
+header {
+    height: 100vh;
+    overflow:hidden;
+    padding-top: 5rem;
+    text-align: center;
+   
+}
+
+.container .header__container{
+    width:100%;
+}
+
+
+
+.text__container {
+    text-align:center;
+    height:100%;
+    
+    padding-top:7vh;
+}
+
+.me {
+    width:80%;
+    height:30rem;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow:hidden;
+
+}
+
+.me > img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3vh;
+    width: 33%;
+    object-fit:contain;
+    border-radius: 12rem 12rem 0 0;
+    border: 2px solid var(--color-primary);
+    border-bottom:0px;
+    background: linear-gradient(0deg, transparent, var(--color-primary, transparent));
+ 
+}
+
+.cta {
+    margin-top:2.5rem;
+    margin-bottom:2.5rem;
+    display:flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+.header_socials {
+    font-size:1.3rem;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:1rem;
+    position: absolute;
+    left: 6vw;
+    bottom: 6rem;
+}
+
+.scroll_down{
+    position:absolute;
+    right: 6rem;
+    bottom:8rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+
+}
+
+
+
+/*  MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+
+      
+    #root > div > canvas {
+        height:100vh;
+      
+    }
+
+   
+.text__container { 
+    padding-top:15vh;
+}
+
+    div.me {
+        width:100%;
+        height:30rem;
+        border-radius: 50px;
+        overflow:hidden;
+        vertical-align: bottom;
+        
+        
+    
+    }
+    
+    div.me > img {
+        
+        margin-top: 3vh;
+        width: 50%;
+        object-fit:contain;
+        border-radius: 12rem 12rem 0 0;
+        border: 2px solid var(--color-primary);
+        background: linear-gradient(0deg, transparent, var(--color-primary, transparent));
+        margin-top:15vh;
+    }
+    div.header_socials {
+        font-size:1.3rem;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:1rem;
+        position: absolute;
+        left: 2rem;
+        bottom: 10rem;
+    }
+
+    
+    a.scroll_down{
+        display:none;
+        position:absolute;
+        right: 0;
+        bottom:12rem;
+        transform: rotate(90deg);
+        font-weight: 300;
+    
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    
+    #root > div > canvas {
+        max-height:100vh;
+    }
+
+        header {
+            max-height: 100vh;
+            overflow:hidden;
+            padding-top: 5rem;
+            text-align: center;
+           
+        }
+    
+    
+    .me {
+        width: 60%;
+        margin-top:0;
+        
+    }
+
+    .header_socials {
+        left: 5rem;
+        bottom: 12rem;
+    }
+    .scroll_down{
+        position:absolute;
+        right: 5rem;
+        bottom:14rem;
+        
+    
+    }
+  
+}
